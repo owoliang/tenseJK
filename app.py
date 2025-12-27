@@ -16,3 +16,6 @@ def index():
 def get_node():
     node_id = request.args.get('id', 'start')
     return jsonify(STORY[node_id])
+
+if __name__ == "__main__":
+    app.run()
