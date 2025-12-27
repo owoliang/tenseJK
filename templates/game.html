@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>轉生女高</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+<!-- Start Screen -->
+<div id="startScreen" class="screen">
+    <button id="startBtn" style="position: absolute; font-size: 2rem; bottom: 20px;">開始遊戲</button>
+</div>
+
+<!-- Game Screen -->
+<div id="gameScreen" class="screen hidden">
+    <div id="background" class="background"></div>
+    
+    <div class="character-area">
+        <img id="mainChar" class="char" src="/static/char/default.png" alt="">
+    </div>
+
+    <div id="dialogue-box" class="dialogue-box">
+        <div id="name" class="speaker"></div>
+        <div id="text" class="dialogue-text"></div>
+
+        <div id="choices" class="choices"></div>
+
+        <div class="controls">
+            <button id="NxtBtn">下一句</button>
+            <button id="toStartBtn">回主畫面</button>
+        </div>
+        <div class="hint">按空白鍵或點擊"下一句"顯示下一句</div>
+    </div>
+</div>
+
+<!-- End Screen -->
+<div id="endScreen" class="screen hidden">
+    <div class="end-box">
+        <img id="endBg" src="" alt="">
+        <h1 id="endTitle"></h1>
+        <p id="endText"></p>
+        <button id="returnBtn" style="font-size: 1rem;">回到開始畫面</button>
+    </div>
+    <p style="position: fixed; font-size: 1rem; bottom: 20px; text-align: center;">請再嘗試看看探索其他結局吧～總共有六個結局喔！</p>
+</div>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>

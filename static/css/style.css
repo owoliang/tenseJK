@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+html,body { height: 100%; margin: 0; font-family: 'Segoe UI', Roboto, 'Noto Sans TC', sans-serif; background: #000; color: #fff; }
+#startScreen {background-image: url('/static/bg/start.png');background-size: cover;background-position: center;}
+.screen { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+.hidden { display: none; }
+.center-box { text-align: center; }
+.background { position: fixed; inset: 0; background-size: cover; background-position: center; z-index: 0; filter: brightness(0.6); }
+.character-area { position: fixed; bottom: -5rem; left: 0; right: 0; display:flex; align-items:flex-end; justify-content: center; gap: 2rem; z-index: 2; pointer-events: none; }
+.char { max-height: 100vh; width: auto; }
+.dialogue-box { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); padding: 20px; z-index: 3; }
+.speaker { font-weight: 700; font-size: 1.6rem; margin-bottom: 10px; text-align: center; }
+.dialogue-text { font-size: 1.4rem; text-align: center; min-height: 3.6rem; }
+.choices { margin-top: 12px; text-align: center; }
+.choices button { font-size: 1.1rem; margin: 6px; padding: 8px 14px; border-radius: 8px; cursor: pointer; }
+.controls { margin-top: 12px; text-align: center; }
+.controls button { margin: 4px; padding: 6px 10px; font-size: 0.95rem; }
+.hint { margin-top: 10px; text-align: center; font-size: 0.9rem; color: #ccc; }
+
+.end-box { text-align: center; padding: 20px; }
+.end-box img { max-width: 80vw; height: auto; display:block; margin: 0 auto 10px; }
